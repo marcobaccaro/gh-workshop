@@ -23,5 +23,6 @@ jobs:
 #      - uses: actions/setup-node@v4
 #        with:
 #          node-version: '20'
-      - run: echo "Branch name is:" ${GITHUB_REF_NAME}
-      - run: echo "event type is:" ${{GITHUB_HEAD_REF}} 
+      - run: echo "Branch:" ${GITHUB_REF_NAME}
+      - run: echo "Event type:" ${GITHUB_HEAD_REF}
+      - run: echo "Runner:" ${RUNNER_NAME}
