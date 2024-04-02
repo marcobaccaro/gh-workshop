@@ -23,5 +23,5 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
-      - run: echo "event name is:" ${{ github.event_name }} 
+      - run: echo "Branch name is:" $GITHUB_BASE_REF
       - run: echo "event type is:" ${{ github.event.action }} 
