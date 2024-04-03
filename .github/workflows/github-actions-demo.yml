@@ -10,10 +10,10 @@ on:
     - cron: 15 */6 * * *
   workflow_dispatch:
     inputs:
-        environment:
-          description: 'Environment to run tests against'
-          type: environment
-          required: true    
+      environment:
+        description: 'Environment to deploy to'
+        type: environment
+        required: true
 jobs:
   build:
     runs-on: ubuntu-latest
